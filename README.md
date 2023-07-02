@@ -1,8 +1,8 @@
 # Questions
 LeetCode 、louGu 、 PTA  
-record topic  
+record question  
 questions No guarantee of accuracy  
 to be verifies  
-this java  
+java  
 or c++ ?  
 Laaaaa
