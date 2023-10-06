@@ -1,13 +1,15 @@
 
 import java.util.Scanner;
-
+/**
+ * kmp算法
+ * */
 public class P3435 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long  k = sc.nextLong();
         char[] str = sc.next().toCharArray();
         int [] next = new int[str.length+10];
-        getNext(next,str,k);
+        getNext(next,str);
         long sum = 0;
         for (int i= 1 ;i <= k;i++){
             int j = i;
@@ -18,7 +20,7 @@ public class P3435 {
         System.out.println(sum);
 
     }
-    public static void getNext(int[] next,char[] pat,long  k){
+    public static void getNext(int[] next,char[] pat){
         int j = 0;
         for (int i = 1;i < pat.length;i++){
             while (j > 0 && pat[j] != pat[i])j = next[j];
